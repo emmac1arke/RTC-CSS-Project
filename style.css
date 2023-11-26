@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9;
+}
+.nav {
+    padding: 1px 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+.brand-logo {
+    height: 120px;
+}
+.nav-items {
+    display:flex;
+    align-items: center;
+}
+.call-to-action {
+    color:#127461;
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 2vh;
+}
+
+.email {
+    color: #127461;
+}
+.email-sign-up {
+    background-color: #F4D03F;
+    border: #F4D03F;
+    color: white;
+    padding: 2px;
+}
+
+.search {
+    width: 500px;
+    display: flex;
+}
+.search-box {
+    width: 40%;
+    height:40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+.search-button {
+    width: 20%;
+    height: 40px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #F4D03F;
+    color: white;
+    text-transform: capitalize;
+    font-size: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.search-box::placeholder {
+    color: #a9a9a9;
+}
+.nav-items > a {
+    margin-left: 20px;
+}
+.nav-items > a > img {
+    width: 30px;
+}
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 20px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+    background-color: #127461;
+}
+.link {
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: .5s;
+}
+.link:hover {
+    opacity: 0.5;
+}
+.hero-section {
+    width:100%;
+    height: 300px;
+    background-image: url(https://www.houseofdisaster.com/cdn/shop/files/Christmas_outlet_3b24f321-74c6-4ffb-81c3-11a9abcc39e1.jpg?v=1698938483&width=2000);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+.hero-section .logo {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.hero-section .sub-heading {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.product-category {
+    padding: 0 10vw;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.product-container {
+    padding: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.product-thumb {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+}
+.card-btn {
+    position: absolute;
+    bottom:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width:90%;
+    border: none;
+    outline:none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background-color: #efefef;
+}
+.product-info {
+    width:100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.product-brand {
+    color:#73C6B6;
+    text-decoration: none;
+}
+.product-short-des {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    opacity: 0.5;
+    margin: 5px;
+    overflow: hidden;
+}
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.collection {
+    position: relative;
+}
+.collection > img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collection-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+}
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background-color: #16A085;
+}
+ .footer-ul-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 3vw;
+ }
+
+.footer-ul-container > ul {
+    list-style: none;
+}
+
+.footer-category-title {
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.footer-link:hover {
+    opacity: 0.5;
+}
+
+
+.footer-title {
+    margin-top: 20px;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.info {
+    font-size: 12px;
+    color: white;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-social-container {
+    display: flex;
+    justify-content: left;
+    padding-top: 2vh;
+}
+
+.social-media-title {
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.sm-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.sm-link {
+    padding-left: 2vw;
+}
+.footer-credit {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
